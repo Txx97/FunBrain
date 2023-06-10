@@ -22,13 +22,14 @@ module.exports = {
         res.header('Access-Control-Allow-Credentials', true);
         res.header("Access-Control-Allow-Origin", '*');
         res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-        if (ALLOWED_URL.includes(origin)) {
+        // console.log(origin)
+        // if (ALLOWED_URL.includes(origin)) {
             let locals = {};
             locals.data = parseRequest(req);
             res.locals = locals;
             next();
-        } else {
-            module.exports.afterMiddleware(req, res, result = { code: 403, error: 'Access Denied' });
-        }
+        // } else {
+        //     module.exports.afterMiddleware(req, res, result = { code: 403, error: 'Access Denied' });
+        // }
     }
 }
