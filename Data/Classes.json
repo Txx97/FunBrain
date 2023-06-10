@@ -28,20 +28,5 @@
         "id": "6",
         "name": "Class 6",
         "status": "disabled"
-    },
-    {
-        "id": "7",
-        "name": "Class 7",
-        "status": "disabled"
-    },
-    {
-        "id": "8",
-        "name": "Class 8",
-        "status": "disabled"
-    },
-    {
-        "id": "9",
-        "name": "Class 9",
-        "status": "disabled"
     }
 ]
