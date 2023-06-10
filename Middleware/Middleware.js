@@ -18,7 +18,7 @@ module.exports = {
 
     async beforeMiddleware(req, res, next) {
         let origin = req.headers.origin;
-        const ALLOWED_URL = ["http://localhost:3000", "https://fun-brain-fe.vercel.app/"]
+        const ALLOWED_URL = ["http://localhost:3000", "https://funbrainfe.vercel.app"]
         res.header('Access-Control-Allow-Credentials', true);
         res.header("Access-Control-Allow-Origin", '*');
         res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
